@@ -1,10 +1,10 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/hzrd149/nostrudel/next/screenshots/icon.svg" alt="Project Logo" width="21%">
+  <img src="./icon.png" alt="Project Logo" width="15%">
 </p>
 
-# noStrudel for StartOS
+# nsecbunker for StartOS
 
-[noStrudel](https://github.com/hzrd149/nostrudel) is a Nostr web client for exploring the Nostr network. This repository creates the s9pk package that is installed to run noStrudel on StartOS.
+[nsecbunker](https://github.com/kind-0/nsecbunkerd) is a remote nostr signer
 
 ## Dependencies
 
@@ -19,22 +19,22 @@ Install the system dependencies below to build this project by following the ins
 
 ## Cloning
 
-Clone the noStrudel package repository locally.
+Clone the nsecbunker package repository locally.
 
 ```
-git clone https://github.com/hzrd149/nostrudel-startos.git
-cd nostrudel-startos
+git clone https://github.com/hzrd149/nsecbunker-startos.git
+cd nsecbunker-startos
 ```
 
 ## Building
 
-To build the `nostrudel` package for all platforms using start-sdk, run the following command:
+To build the `nsecbunker` package for all platforms using start-sdk, run the following command:
 
 ```
 make
 ```
 
-To build the `nostrudel` package for a single platform using start-sdk, run:
+To build the `nsecbunker` package for a single platform using start-sdk, run:
 
 ```
 # for amd64
@@ -54,7 +54,7 @@ Run the following commands to determine successful install:
 ```
 start-cli auth login
 # Enter your StartOS password
-start-cli --host https://server-name.local package install nostrudel.s9pk
+start-cli --host https://server-name.local package install nsecbunker.s9pk
 ```
 
 If you already have your `start-cli` config file setup with a default `host`, you can install simply by running:
@@ -63,10 +63,10 @@ If you already have your `start-cli` config file setup with a default `host`, yo
 make install
 ```
 
-> **Tip:** You can also install the nostrudel.s9pk using **Sideload Service** under the **System > Manage** section.
+> **Tip:** You can also install the nsecbunker.s9pk using **Sideload Service** under the **System > Manage** section.
 
 ### Verify Install
 
-Go to your StartOS Services page, select **noStrudel**, configure and start the service. Then, verify its interfaces are accessible.
+Go to your StartOS Services page, select **nsecbunker**, configure and start the service. Then, verify its interfaces are accessible.
 
 **Done!**

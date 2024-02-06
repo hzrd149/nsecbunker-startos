@@ -2,7 +2,7 @@
 
 # The package identifier used by the OS. This must be unique amongst all other known packages
 id: nsecbunker
- # A human readable service title
+# A human readable service title
 title: "nsecbunker"
 # Service version - accepts up to four digits, where the last confirms to revisions necessary for StartOS - see documentation: https://github.com/Start9Labs/emver-rs. This value will change with each release of the service.
 version: 0.10.2.0
@@ -71,8 +71,13 @@ health-checks:
     name: Web UI
     success-message: nsecbunker is ready
     type: script
-config: ~
-properties: ~
+config:
+  get:
+    type: script
+  set:
+    type: script
+properties:
+  type: script
 #  type: script
 # This denotes any data, asset, or pointer volumes that should be connected when the "docker run" command is invoked
 volumes:
@@ -87,11 +92,11 @@ interfaces:
   # This key is the internal name that the OS will use to configure the interface
   main:
     # A human readable name for display in the UI
-    name: User Interface
+    name: Admin UI
     # A descriptive description of what the interface does
-    description: Admin UI
+    description: nsecbunker Admin UI
     tor-config:
-    # Port mappings are from the external port to the internal container port
+      # Port mappings are from the external port to the internal container port
       port-mapping:
         80: "80"
         443: "3443"
@@ -99,7 +104,7 @@ interfaces:
     lan-config:
       443:
         ssl: true
-        internal: 8080
+        internal: 3000
     # Denotes if the service has a user interface to display
     ui: true
     # Denotes the protocol specifications used by this interface

@@ -67,8 +67,8 @@ main:
     cert: /mnt/cert
 # This is where health checks would be defined - see a more advanced example in https://github.com/Start9Labs/start-pages-wrapper
 health-checks:
-  web-ui:
-    name: Web UI
+  admin-ui:
+    name: Admin UI
     success-message: nsecbunker is ready
     type: script
 config:

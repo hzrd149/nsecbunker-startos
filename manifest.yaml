@@ -5,7 +5,7 @@ id: nsecbunker
 # A human readable service title
 title: "nsecbunker"
 # Service version - accepts up to four digits, where the last confirms to revisions necessary for StartOS - see documentation: https://github.com/Start9Labs/emver-rs. This value will change with each release of the service.
-version: 0.10.2.0
+version: 0.10.3.0
 # Release notes for the update - can be a string, paragraph or URL
 release-notes: ""
 # The type of license for the project. Include the LICENSE in the root of the project directory. A license is required for a Start9 package.
@@ -32,7 +32,7 @@ assets:
   # Default = LICENSE.md
   license: LICENSE
   # Default = icon.png (.svg allowed)
-  icon: icon.png
+  icon: icon.svg
   # Default = INSTRUCTIONS.md
   instructions: instructions.md
   # Default = image.tar

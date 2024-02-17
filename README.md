@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./icon.png" alt="Project Logo" width="15%">
+  <img src="./icon.svg" alt="Project Logo" width="15%">
 </p>
 
 # nsecbunker for StartOS
@@ -40,7 +40,9 @@ To build the `nsecbunker` package for a single platform using start-sdk, run:
 # for amd64
 make x86
 ```
+
 or
+
 ```
 # for arm64
 make arm
@@ -49,6 +51,7 @@ make arm
 ## Installing (on StartOS)
 
 Run the following commands to determine successful install:
+
 > :information_source: Change server-name.local to your Start9 server address
 
 ```

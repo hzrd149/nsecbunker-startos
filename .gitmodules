@@ -3,4 +3,4 @@
 	url = https://github.com/kind-0/nsecbunkerd.git
 [submodule "nsecbunker-admin-ui"]
 	path = nsecbunker-admin-ui
-	url = https://github.com/kind-0/nsecbunker-admin-ui.git
+	url = https://github.com/hzrd149/nsecbunker-admin-ui.git

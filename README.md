@@ -1,10 +1,10 @@
 <p align="center">
-  <img src="./icon.svg" alt="Project Logo" width="15%">
+  <img src="./icon.png" alt="Project Logo" width="21%">
 </p>
 
-# nsecbunker for StartOS
+# nsecBunker for StartOS
 
-[nsecbunker](https://github.com/kind-0/nsecbunkerd) is a remote nostr signer
+[nsecBunker](https://github.com/kind-0/nsecbunkerd) is a remote nostr signer
 
 ## Dependencies
 
@@ -19,7 +19,7 @@ Install the system dependencies below to build this project by following the ins
 
 ## Cloning
 
-Clone the nsecbunker package repository locally.
+Clone the nsecBunker package repository locally.
 
 ```
 git clone https://github.com/hzrd149/nsecbunker-startos.git
@@ -70,6 +70,6 @@ make install
 
 ### Verify Install
 
-Go to your StartOS Services page, select **nsecbunker**, configure and start the service. Then, verify its interfaces are accessible.
+Go to your StartOS Services page, select **nsecBunker**, configure and start the service. Then, verify its interfaces are accessible.
 
 **Done!**
